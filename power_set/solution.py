@@ -10,7 +10,7 @@ def get_subsets(my_set):
         for subet in list(all_subsets):
             all_subsets.append(subet.union({n}))
 
-    return len(all_subsets)
+    return all_subsets
 
 
 if __name__ == "__main__":
