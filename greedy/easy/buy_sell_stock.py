@@ -15,7 +15,6 @@ def max_profit(prices):
     r = 1
     max_profit = 0
 
-
     while r < len(prices):
         if prices[r] - prices[l] > 0:
             max_profit = max( max_profit, prices[r] - prices[l])
