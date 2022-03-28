@@ -16,7 +16,7 @@ def merge(nusm1, m, nums2, n):
 
     for n2 in nums2:
         i1 = 0
-        while i1 < len(nums1) - 1 and (nums1[i1] <= n2 and i1 < m):
+        while i1 < len(nums1) - 1 and (nums1[i1] <= n2 or (i1 >= m and nums[i1])):
             i1 += 1
         nums1[i1+1:] = nums1[i1:-1]
         nums1[i1] = n2
