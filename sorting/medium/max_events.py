@@ -9,7 +9,6 @@
 # Return the maximum number of events you can attend.
 
 import heapq
-from os import WUNTRACED
 
 def maxEvents(events):
     events.sort(reverse= True)
